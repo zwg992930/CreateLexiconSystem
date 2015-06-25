@@ -1,0 +1,138 @@
+@CHARSET "UTF-8";
+
+*{
+	padding:0px;
+	margin:0px;
+}
+
+
+a:focus, *:focus { outline: none; }
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/*IE6*/
+* html .clearfix { zoom: 1; }
+
+/*IE7*/
+*:first-child + html .clearfix { zoom: 1; }
+
+/* 弹出层 */
+.shade{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	background:#000000;
+	opacity:0.5;
+	display:block;
+	z-index:10;
+	
+}
+
+.updateuser{
+	position:absolute;
+	display:block;
+	top:10%;
+	bottom:10%;
+	left:25%;
+	right:25%;
+	z-index:11;
+	
+}
+
+.modify {
+	position: relative;
+	margin-top: 50px;
+	width: 450px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #899efe;
+}
+
+
+.modify .close{
+	position: absolute;
+	right: 1px;
+	top: 1px;
+}
+
+.modify .close a{
+	display: block;
+	cursor: pointer;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.modify .close a img{
+	width:35px;
+	height: 35px;
+	display:block;
+}
+
+
+/*表单*/
+.modify .textInput{
+	width: 200px;
+	height: 35px;
+	border: 1px solid #CCCCCC;
+}
+
+.modify table{
+	width: 450px;
+	font-size: 12px;
+	color: #000000;
+}
+
+.modify th,.modify td{
+	padding: 3px;
+}
+
+.modify th {
+	font-weight: normal;
+	text-align: right;
+}
+
+.modify .btn {
+	background-color: #e1a;
+	background-image: url(../images/btn2.png);
+	display: block;
+	position: relative;
+}
+
+.modify .submit {
+	width: 100px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 186px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	border: 1px solid #E28590;
+	background-color: #9b9b9b;
+	padding: 2px;
+	cursor: pointer;
+	background-image: url(../images/shade.png);
+	background-position: bottom;
+}
+
+.modify .submit:hover {
+	background-color: #7b7b7b;
+	border-color: #a00;
+}
+
+.modify label{
+	font-size: 12px;
+	color: #CCCCCC;
+	font-weight: normal;
+}
+
+.modify span.warning{
+	color: red;
+}
+
+.modify span.success {
+	color: green;
+}

@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	font-family: 'Georgia', 'Arial', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+body{
+	background:#f2f2f2;
+	overflow:visible;
+}
+
+.shade {
+/* 	opacity: 0.65; */
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #f2f2f2;
+	display: none;
+}
+
+.register {
+	position: relative;
+	margin-top: 50px;
+	width: 450px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #899efe;
+	z-index: 6;
+	display: none;
+}
+
+
+.register .close, .loginfm .close{
+	position: absolute;
+	width:35px;
+	height: 35px;
+	right: 1px;
+	top: 1px;
+}
+
+.register .close a,  .loginfm .close a{
+	display: block;
+	cursor: pointer;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	width:100%;
+	height:100%;
+	background:url(../images/closebutton.png) no-repeat;
+}
+
+.register .close a img,  .loginfm .close a img{
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+.login {
+	margin-top:80px;
+	height: 350px;
+	width: 400px;
+	position: relative;
+	z-index: 6;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.top-wrap{
+width:100%;
+background:#f2f2f2;
+border-bottom:3px solid #666;
+padding-top:20px;
+padding-bottom:20px;
+position:relative;
+
+
+}
+
+#project-name{
+	position:absolute;
+	left:25%;
+	right:25%;
+	bottom:0px;
+	top:0px;
+	text-align:center;
+	font-size:26px;
+	color:#0f0f0f;
+	line-height:83px;
+}
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+* html .clearfix {
+    zoom: 1
+}
+
+*:first-child + html .clearfix {
+    zoom: 1
+}
+
+
+#log-reg, #have-log{
+	float: right;
+	margin-right: 30px;
+	display:block;
+}
+
+#log-reg li, #have-log li {
+	list-style: none;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	display: inline;
+	float: left;
+}
+
+#log-reg li a, #have-log li a{
+	font-size: 14px;
+	font-weight: bold;
+	color: #E28590;
+	text-decoration: none;
+	display: block
+}
+
+#log-reg li a:hover, #have-log li a:hover{
+	color: #66C;
+	corsor:pointer;
+}
+
+.loginfm {
+	width: 400px;
+	height: 350px;
+	background: #899efe;
+	border: 1px solid #422D2A;
+	position: absolute;
+	z-index: 8;
+	display: none;
+}
+
+.loginfm a {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+.loginfm a:hover {
+	color: #66C;
+	text-decoration: none;
+}
+
+/*表单*/
+.textInput {
+	width: 200px;
+	height: 35px;
+	border: 1px solid #CCCCCC;
+}
+
+table {
+	width: 450px;
+	font-size: 12px;
+	color: #000000;
+}
+
+th,td {
+	padding: 3px;
+}
+
+th {
+	font-weight: normal;
+	text-align: right;
+}
+
+.btn {
+	background-color: #e1a;
+	background-image: url(../images/btn2.png);
+	display: block;
+	position: relative;
+}
+
+#submit {
+	width: 100px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 186px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	border: 1px solid #E28590;
+	background-color: #9b9b9b;
+	padding: 2px;
+	cursor: pointer;
+	background-image: url(../images/shade.png);
+	background-position: bottom;
+}
+
+#submit:hover {
+	background-color: #7b7b7b;
+	border-color: #a00;
+}
+
+label {
+	font-size: 12px;
+	color: #CCCCCC;
+	font-weight: normal;
+}
+
+span.warning {
+	color: red;
+}
+
+span.success {
+	color: green;
+}
